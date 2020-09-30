@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "OpenSans";
+  src: url(/ttf/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Banny";
+  src: url(/ttf/Banny-Round.otf);
+}
+
+.container {
+  max-width: 1318px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  color: #fff;
+  font-family: OpenSans;
+}
+
+p {
+  font-family: OpenSans;
+}
+
+.header {
+  background: url(/img/headerPhon.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.menu {
+  padding-top: 26px;
+  padding-left: 29px;
+}
+
+.menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu li {
+  padding-top: 19px;
+}
+
+.menu .menu__link {
+  color: #fff;
+  font-size: 12px;
+  font-family: OpenSans;
+  padding: 0 13.4px;
+  letter-spacing: 0.9px;
+}
+
+.header__top {
+  margin-top: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.header__top .header__left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 20%;
+  position: absolute;
+  top: 87px;
+  left: -9.3%;
+}
+
+.header__top .header__left .header__left-time p {
+  color: #fff;
+  font-family: OpenSans;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+}
+
+.header__top .header__center {
+  position: absolute;
+  top: -27px;
+  left: 19.6%;
+  width: 80%;
+}
+
+.header__top .header__center .header__center-name p {
+  font-size: 13px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 6px;
+  padding-right: 23%;
+}
+
+.header__top .header__center .header__center-title {
+  font-family: Banny;
+  font-size: 94px;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  padding-top: 21px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.header__top .header__center .header__center-line {
+  width: 6%;
+  border-radius: 50px;
+  margin-left: 359px;
+  margin-top: 23px;
+  height: 5px;
+  background: #E8C300;
+}
+
+.header__top .header__center .header__center-left {
+  margin: 30px 38px 0 169px;
+  width: 19.5%;
+  font-size: 12px;
+  height: 58px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.header__top .header__center .header__center-right {
+  width: 19.5%;
+  font-size: 12px;
+  height: 58px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  background: none;
+  color: #fff;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.header__top .header__right {
+  position: absolute;
+  top: -16px;
+  right: -2px;
+}
+
+.header__top .header__right .header__right-social__fc {
+  padding-bottom: 19px;
+}
+
+.header__top .header__right .header__right-social__ins {
+  padding-top: 17px;
+}

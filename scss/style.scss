@@ -1,0 +1,25 @@
+@import "_nullstyle" ;
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(/ttf/OpenSans-Regular.ttf),
+   }
+@font-face {
+    font-family: "Banny";
+    src: url(/ttf/Banny-Round.otf),
+   }
+.container{
+    max-width: 1318px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+body{
+    color: #fff;
+    font-family: OpenSans;
+}
+p{
+    font-family: OpenSans;
+}
+
+@import "_header" ;
