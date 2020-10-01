@@ -75,12 +75,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 @font-face {
   font-family: "OpenSans";
-  src: url(/ttf/OpenSans-Regular.ttf);
+  src: url(../ttf/OpenSans-Regular.ttf);
 }
 
 @font-face {
   font-family: "Banny";
-  src: url(/ttf/Banny-Round.otf);
+  src: url(../ttf/Banny-Round.otf);
 }
 
 @-webkit-keyframes scale {
