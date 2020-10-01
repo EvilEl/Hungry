@@ -83,6 +83,28 @@ h1, h2, h3, h4, h5, h6 {
   src: url(/ttf/Banny-Round.otf);
 }
 
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
 .container {
   max-width: 1318px;
   width: 100%;
@@ -121,16 +143,47 @@ p {
           justify-content: space-between;
 }
 
+.menu .menu__list object {
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.menu .menu__list object:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .menu li {
   padding-top: 19px;
 }
 
 .menu .menu__link {
+  position: relative;
   color: #fff;
   font-size: 12px;
   font-family: OpenSans;
   padding: 0 13.4px;
   letter-spacing: 0.9px;
+}
+
+.menu .menu__link::after {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 2px;
+  background-color: #E8C300;
+  content: '';
+}
+
+.menu .menu__link:hover::after, .menu .menu__link:focus::after {
+  -webkit-animation: scale 1s infinite;
+          animation: scale 1s infinite;
+  width: 100%;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: end;
+          animation-timing-function: end;
 }
 
 .header__top {
@@ -165,6 +218,7 @@ p {
   top: -27px;
   left: 19.6%;
   width: 80%;
+  height: 510px;
 }
 
 .header__top .header__center .header__center-name p {
@@ -204,6 +258,17 @@ p {
   background: none;
   color: #fff;
   border-radius: 4px 4px 4px 4px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.header__top .header__center .header__center-left:hover {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #E8C300;
+  border: none;
 }
 
 .header__top .header__center .header__center-right {
@@ -215,6 +280,76 @@ p {
   background: none;
   color: #fff;
   border-radius: 4px 4px 4px 4px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.header__top .header__center .header__center-right:hover {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #E8C300;
+  border: none;
+}
+
+.header__top .header__center .header__center-down {
+  border: 1px solid #333333;
+  width: 6%;
+  height: 68px;
+  background: none;
+  position: absolute;
+  top: 98%;
+  left: 35%;
+  border-radius: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__top .header__center .header__center-down:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header__top .header__center .header__center-down span {
+  position: absolute;
+  left: 21px;
+  width: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 3px;
+  z-index: 10;
+  background-color: #333;
+  border-radius: 78px;
+}
+
+.header__top .header__center .header__center-down span::after {
+  position: absolute;
+  content: '';
+  top: -4px;
+  left: 4px;
+  width: 9px;
+  -webkit-transform: rotate(-89deg);
+          transform: rotate(-89deg);
+  height: 3px;
+  z-index: 10;
+  background-color: #333;
+  border-radius: 78px;
+  z-index: 10;
+}
+
+.header__top .header__center .header__center-down::after {
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  display: block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .header__top .header__right {
@@ -225,8 +360,38 @@ p {
 
 .header__top .header__right .header__right-social__fc {
   padding-bottom: 19px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__top .header__right .header__right-social__fc:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header__top .header__right .header__right-social__tw {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__top .header__right .header__right-social__tw:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .header__top .header__right .header__right-social__ins {
   padding-top: 17px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.header__top .header__right .header__right-social__ins:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }

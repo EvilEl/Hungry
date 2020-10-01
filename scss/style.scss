@@ -8,6 +8,17 @@
     font-family: "Banny";
     src: url(/ttf/Banny-Round.otf),
    }
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    
+    100%{
+        transform: scale(0);
+    }
+  
+}
 .container{
     max-width: 1318px;
     width: 100%;
