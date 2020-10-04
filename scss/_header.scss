@@ -2,7 +2,6 @@
      background:url(../img/headerPhon.png)no-repeat;
      background-position: center;
      background-size: cover;
-     background-attachment: fixed;
      height: 100%;
      width: 100%;
  }
@@ -81,25 +80,33 @@
             letter-spacing: 6px;
             padding-right: 23%;
         }
+
         .header__center-title {
+            position: relative;
             font-family: Banny;
             font-size: 94px;
-            letter-spacing: 2.1px;
+            font-size: calc(25px + 55 * (100vw/1441));
+            letter-spacing: 4.5px;
             text-transform: uppercase;
-            padding-top: 21px;
+            margin-top: 21px;
+            padding-bottom: 35px;
             font-weight: bold;
-            width: 100%;
+            width: 90%;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 92%;
+                left: 38%;
+                width: 7.5%;
+                border-radius: 50px;
+                margin: 0 auto;
+                height: 5px;
+                background: #E8C300;
+            }
         }
-        .header__center-line{
-            width: 6%;
-            border-radius: 50px;
-            margin-left: 359px;
-            margin-top: 23px;
-            height: 5px;
-            background: #E8C300;
-        }
+
         .header__center-left{
-            margin: 30px 38px 0 169px;
+            margin: 4% 3% 0 17%; 
             width: 19.5%;
             font-size: 12px;
             height: 58px;
@@ -137,10 +144,10 @@
         .header__center-down{
             border: 1px solid rgb(51, 51, 51);
             width: 6%;
-            height: 68px;
-            background: none;
+            height: 14%;
+            background : none;
             position: absolute;
-            top: 98%;
+            top: 79%;
             left: 35%;
             border-radius: 50%;
             transition: 1s;
@@ -150,10 +157,10 @@
             }
             & span{
                 position: absolute;
-                left: 21px;
-                width: 9px;
+                left: 34%;
+                width: 17%;
                 transform: rotate(45deg);
-                height: 3px;
+                height: 5%;
                 z-index: 10;
                 background-color: #333;
                 border-radius: 78px;
@@ -219,7 +226,5 @@
 
 
  @media (min-width:1357px) and (max-width:1639px){
-    .header__top .header__center .header__center-down {
-         top: 79%;
-     }
+
  }
