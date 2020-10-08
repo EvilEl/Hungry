@@ -1,0 +1,74 @@
+.contact{
+    padding-bottom: 100px;
+    .contact__title{
+        position: relative;
+        font-family: Banny;
+        font-size: calc(10px + 1.73491vw);
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+        margin-top: 100px;
+        color: rgb(0, 0, 0);
+        padding-bottom: 35px;
+        font-weight: bold;
+        text-align: center;
+        padding-right: 25px;
+        &::after{
+            position: absolute;
+            content: "";
+            top: 74%;
+            left: 46.8%;
+            width: 4.8%;
+            border-radius: 50px;
+            margin: 0px auto;
+            height: 5px;
+            background: rgb(232, 195, 0);
+        }
+    }
+    .contact__text{
+        color: #000;
+        text-align: center;
+        padding-top: 10px;
+        width: 43%;
+        margin-left: 27.7%;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.7px;
+    }
+    .contact__form{
+        margin-top: 49px;
+        .contact__form-inp{
+            width: 32.3%;
+            height: 58px;
+            background-color: #E5E5E5;
+            border-radius: 5px;
+            padding-left: 20px;
+            margin-right: 6px;
+        }
+        & textarea{
+            margin-top: 10px;
+            background-color: #E5E5E5;
+            border-radius: 5px;
+            width: 98.2%;
+            padding: 22px 0 0 18px;
+            letter-spacing: 0.3px;
+            height: 120px;
+            outline: none;
+            resize: none;
+        }
+        .contact__form-img{
+            width: 48.9%;
+        }
+        & button {
+            background: #E8C300;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 9px;
+            width: 49.2%;
+            font-size: 12.5px;
+            color: #fff;
+            padding-top: 4px;
+            height: 62px;
+        }
+    }
+}

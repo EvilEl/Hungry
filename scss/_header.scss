@@ -6,51 +6,59 @@
      width: 100%;
  }
  .menu {
-    padding-top: 26px;
-    padding-left: 29px;
-    & .menu__list{
+    padding-top: 64px;
+    /* padding-left: 29px; */
+    height: 11%;
+     .menu__list{
         display: flex;
         justify-content: space-between;
         & object{
             transition: all 1.5s;
             &:hover{
-                
                 transform: rotate(360deg);
             }
         }
-    }
-    & li{
-        padding-top: 19px;
-    }
-    & .menu__link{
-        position: relative;
-        color: #fff;
-        font-size: 12px;
-        font-family: OpenSans;
-        padding: 0 13.4px;
-        letter-spacing: 0.9px;
-            &::after{
-                display: block;
-                position: absolute;
-                top: 20px;
-                left: 0;
-                height: 2px;
-                background-color:#E8C300;
-                content: '';
-            }
-            &:hover::after,
-            &:focus::after
-                        {
-                animation: scale 0.5s ; 
-                width: 100%;
-                animation-iteration-count: 2;
-                animation-fill-mode:forwards;
-                animation-direction: alternate-reverse;
-            }
+        .menu-item{
+            display: inline-block;
+            .menu__link{
+                position: relative;
+                color: #fff;
+                font-size: 12px;
+                font-family: OpenSans;
+                padding: 0 13.4px;
+                letter-spacing: 0.9px;
+                    &:last-child{
+                    padding-right: 0;
+                }
+                    &::after{
+                        display: block;
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        height: 2px;
+                        background-color:#E8C300;
+                        content: '';
+                    }
+                    &:hover::after,
+                    &:focus::after
+                                {
+                        animation: scale 0.5s ; 
+                        width: 100%;
+                        animation-iteration-count: 2;
+                        animation-fill-mode:forwards;
+                        animation-direction: alternate-reverse;
+                    }
+                }
+        }
         }
     }
+    // & li{
+    //     padding-top: 19px;
+    // }
+    
  .header__top{
      margin-top: 181px;  
+     height: 100%;
      display: flex;
      justify-content: space-between;
      position: relative;

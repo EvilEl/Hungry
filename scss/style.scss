@@ -22,9 +22,10 @@
 .container{
     max-width: 1318px;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 8px;
     margin: 0 auto;
 }
+
 body{
     color: #fff;
     font-family: OpenSans;
@@ -42,3 +43,15 @@ p{
 @import "_booking";
 
 @import "_specialties";
+
+@import "_stock";
+
+@import "_event";
+
+@import "_image";
+
+@import "_contact";
+
+@import "_map";
+
+@import "_footer";
