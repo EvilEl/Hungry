@@ -20,6 +20,7 @@
             .slider__item{
                 display: flex;
                 flex: 0 0 100%;
+                transition: 0.5s ease ;
                 .slider__image{
                     flex: 0 0 50%;
                     padding: 0 0 50% 0;
@@ -96,6 +97,18 @@
     
 }
 
+.margin {
+    transform: translateX(-100%);
+    transition: 0.5s ease ;
+}
+.margin1 {
+    transform: translateX(-2600px);
+    transition: 0.5s ease ;
+}
+.margin2{
+    transform: translateX(-3600px);
+    transition: 0.5s ease ;
+}
 
     // .dots__wrapper{
     //     display: flex;

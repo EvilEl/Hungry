@@ -1,3 +1,42 @@
+const dots = document.querySelectorAll('.dot'),
+    slider = document.querySelectorAll('.slider__item');
+
+dots[0].addEventListener('click', e => {
+    slider[0].classList.remove('margin');
+    slider[1].classList.remove('margin')
+
+    slider[1].style.transform = 'translateX(1300px)';
+    slider[2].style.transform = 'translateX(2600px)';
+
+
+    dots[0].style.background = 'red';
+    dots[1].style.background = '#fff';
+    dots[2].style.background = '#fff';
+})
+
+dots[1].addEventListener('click', e => {
+    slider[0].classList.add('margin');
+    slider[1].classList.add('margin')
+    slider[1].style.transform = 'translateX(-1300px)';
+    slider[2].style.transform = 'translateX(2600px)';
+
+    dots[0].style.background = '#fff';
+    dots[1].style.background = 'red';
+    dots[2].style.background = '#fff';
+})
+
+dots[2].addEventListener('click', e => {
+    slider[0].classList.add('margin');
+    slider[1].style.transform = 'translateX(-2600px)';
+    slider[2].style.transform = 'translateX(-2600px)';
+
+
+    dots[0].style.background = '#fff';
+    dots[1].style.background = '#fff';
+    dots[2].style.background = 'red';
+})
+
+
 function openbox(SOUPE) {
     display = document.getElementById('SOUPE').style.display;
     if (display == "none") {
@@ -103,68 +142,3 @@ function DRINKS(DRINKS) {
         document.getElementById('DRINKS').style.display = "none"
     }
 }
-
-
-
-
-
-$(document).ready(function () {
-
-    $("#menu").on("click", "a", function (event) {
-
-        //отменяем стандартную обработку нажатия по ссылке
-
-        event.preventDefault();
-
-        //забираем идентификатор бока с атрибута href
-        var id = $(this).attr('href'),
-
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({ scrollTop: top }, 1500);
-    })
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const stock = document.querySelectorAll('.stock__link'),
-//     pizza = document.querySelector('.stock__wrappper-pizza'),
-//     soupe = document.querySelector('.stock__wrappper-soupe'),
-//     pasta = document.querySelector('.stock__wrappper-pasta'),
-//     wine = document.querySelector('.stock__wrappper-wine'),
-//     beer = document.querySelector('.stock__wrappper-beer'),
-//     drinks = document.querySelector('.stock__wrappper-drinks'),
-//     desert = document.querySelector('.stock__wrappper-desert');
-
-// // stock.addEventListener('click', e => {
-// //     soupe.classList.toggle('active')
-// //     pizza.classList.toggle('active')
-// //     pasta.classList.toggle('active')
-// //     wine.classList.toggle('active')
-// //     beer.classList.toggle('active')
-// //     drinks.classList.toggle('active')
-// //     desert.classList.toggle('active')
-// // })
-
-
-// function remove() {
-//     stock.classList.remove('active')
-// }
-
-// for (let i = 0; i < stock.length; i++) {
-//     pizza.onclick = remove
-// }
-// console.log(stock);
