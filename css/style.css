@@ -112,9 +112,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #fff;
   font-family: OpenSans;
+  scroll-behavior: smooth;
 }
 
 p {
