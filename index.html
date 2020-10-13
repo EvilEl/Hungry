@@ -23,7 +23,12 @@
                     <li class="menu-item"><a href="#event" class="menu__link">EVENTS</a></li>
                     <li class="menu-item"><a href="#contact" class="menu__link">CONTACT</a></li>
                 </ul>
+
+                <div class="menu__burger">
+                    <span class="burger"></span>
+                </div>
             </nav>
+
             <div class="header__top">
                 <div class="header__left">
                     <div class="header__left-time">
@@ -218,7 +223,7 @@
                 </div>
                 <div class="dots__wrapper">
                     <span class="dot"></span>
-                    <span class="dot ddd"></span>
+                    <span class="dot"></span>
                     <span class="dot"></span>
                 </div>
             </div>
@@ -286,23 +291,16 @@
                 molestie est a, tempor magna.</p>
 
             <ul class="stock__list">
-                <li class="stock__items"><a href="#SOUPE" onclick="openbox('SOUPE'); return false"
-                        class="stock__link">SOUPE</a></li>
-                <li class="stock__items"><a href="#PIZZA" onclick="PIZZA('PIZZA'); return false"
-                        class="stock__link">PIZZA</a></li>
-                <li class="stock__items"><a href="#PASTA" onclick="PASTA('PASTA'); return false"
-                        class="stock__link">PASTA</a></li>
-                <li class="stock__items"><a href="#DESER" onclick="DESER('DESER'); return false"
-                        class="stock__link">DESERT</a></li>
-                <li class="stock__items"><a href="#WINE" onclick="WINE('WINE'); return false"
-                        class="stock__link">WINE</a></li>
-                <li class="stock__items"><a href="#BEER" onclick="BEER('BEER'); return false"
-                        class="stock__link">BEER</a></li>
-                <li class="stock__items"><a href="#DRINKS" onclick="DRINKS('DRINKS'); return false"
-                        class="stock__link">DRINKS</a></li>
+                <li class="stock__items"><a href="#SOUPE" class="stock__link">SOUPE</a></li>
+                <li class="stock__items"><a href="#PIZZA" class="stock__link">PIZZA</a></li>
+                <li class="stock__items"><a href="#PASTA" class="stock__link">PASTA</a></li>
+                <li class="stock__items"><a href="#DESER" class="stock__link">DESERT</a></li>
+                <li class="stock__items"><a href="#WINE" class="stock__link">WINE</a> </li>
+                <li class="stock__items"><a href="#BEER" class="stock__link">BEER</a></li>
+                <li class="stock__items"><a href="#DRINKS" class="stock__link">DRINKS</a></li>
             </ul>
 
-            <div id="SOUPE" class="stock__wrappper-soupe" style="display: none;">
+            <div id="SOUPE" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">SOUPE QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>
@@ -389,7 +387,7 @@
                 </div>
             </div>
 
-            <div id="PIZZA" class="stock__wrappper-pizza" style="display: none;">
+            <div id="PIZZA" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">PIZZA QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>
@@ -476,7 +474,7 @@
                 </div>
             </div>
 
-            <div id="PASTA" class="stock__wrappper-pasta" style="display: none;">
+            <div id="PASTA" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">PASTA QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>
@@ -563,7 +561,7 @@
                 </div>
             </div>
 
-            <div id="DESER" class="stock__wrappper-desert" style="display: none;">
+            <div id="DESER" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">DESER QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>
@@ -650,7 +648,7 @@
                 </div>
             </div>
 
-            <div id="WINE" class="stock__wrappper-wine" style="display: none;">
+            <div id="WINE" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">WINE QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>
@@ -737,7 +735,7 @@
                 </div>
             </div>
 
-            <div id="BEER" class="stock__wrappper-beer" style="display: none;">
+            <div id="BEER" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">BEER QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>
@@ -824,7 +822,7 @@
                 </div>
             </div>
 
-            <div id="DRINKS" class="stock__wrappper-drinks" style="display: none;">
+            <div id="DRINKS" class="stock__wrappper">
                 <div class="stock__items">
                     <p class="stock__items-name">DRINKS QUATRO STAGIONI . . . . 55,68 USD</p>
                     <p class="stock__items-recept">Integer ullamcorper neque eu purus euismod</p>

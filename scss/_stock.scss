@@ -7,7 +7,7 @@
         letter-spacing: 1.7px;
         text-transform: uppercase;
         padding-right: 22px;
-        margin-top: 19px;
+        margin-top: 40px;
         padding-bottom: 21px;
         font-weight: bold;
         width: 100%;
@@ -41,7 +41,7 @@
     .stock__list{
         display: flex;
         margin-top: 52px;
-        margin-left: 228px;
+        margin-left: 20%;
         .stock__items{
             height: 47px;
             border-right: 1px solid #000;
@@ -64,6 +64,31 @@
             // padding-left: 81.4px;
             font-size: 13px;
             font-family: "OpenSans";
+            }
+        }
+        .stock__wrappper{
+            display: none;
+            flex-wrap: wrap;
+            margin-top: 51px;
+            .stock__items{
+                width: 33.3%;
+                margin-bottom: 31px;
+                &:nth-child(3n+3){
+                    padding-left: 49px;
+                }
+                .stock__items-name{
+                    font-weight: bold;
+                    color: #000;
+                    padding-top: 2px;
+                    font-size: 18.5px;
+                    letter-spacing: 0.3px;
+                }
+             
+                .stock__items-recept{
+                    color: #333;
+                    padding-top: 3px;
+                    font-size: 12px;
+                }
             }
         }
         .stock__wrappper-soupe{
@@ -243,5 +268,8 @@
         }
         .active {
             display: none;
+        }
+        .activeFlex{
+            display: flex;
         }
     }

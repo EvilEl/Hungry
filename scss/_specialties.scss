@@ -20,7 +20,8 @@
             .slider__item{
                 display: flex;
                 flex: 0 0 100%;
-                transition: 0.5s ease ;
+                // transition: 1s ease ;
+                transition-duration: 250ms;
                 .slider__image{
                     flex: 0 0 50%;
                     padding: 0 0 50% 0;
@@ -83,23 +84,24 @@
         justify-content: center;
          .dot{
             display: block;
-            width: 15px;
-            height: 15px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
-            margin-right: 7px;
-            background: #fff;
-            cursor: pointer;;
+            margin-right: 13px;
+            background: #333;
+            cursor: pointer;
+                &:first-child{
+                background: #fff;
+            }
         }
-        & .active{
-            background: #000;
-        }
+    
     }
     
 }
 
 .margin {
     transform: translateX(-100%);
-    transition: 0.5s ease ;
+    transition-duration: 250ms;
 }
 .margin1 {
     transform: translateX(-2600px);

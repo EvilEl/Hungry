@@ -7,19 +7,20 @@
  }
  .menu {
     padding-top: 64px;
-    /* padding-left: 29px; */
-    height: 11%;
+    justify-content: center;
+    display: flex;
+    height: 15%;
      .menu__list{
         display: flex;
-        justify-content: space-between;
         & object{
             transition: all 1.5s;
+            padding-left: 30px;
             &:hover{
                 transform: rotate(360deg);
             }
         }
         .menu-item{
-            display: inline-block;
+            padding-right: 57px;
             .menu__link{
                 position: relative;
                 color: #fff;
@@ -28,7 +29,7 @@
                 padding: 0 13.4px;
                 letter-spacing: 0.9px;
                     &:last-child{
-                    padding-right: 0;
+                    // padding-right: 0;
                 }
                     &::after{
                         display: block;
@@ -36,26 +37,104 @@
                         top: 20px;
                         left: 0;
                         height: 2px;
+                        transform: scale(0.5);
+                        transition: 0.3s;
+                        width: 100%;
                         background-color:#E8C300;
                         content: '';
                     }
-                    &:hover::after,
-                    &:focus::after
-                                {
-                        animation: scale 0.5s ; 
+                    &:hover::after{
+                        transform: scale(0.7);
                         width: 100%;
-                        animation-iteration-count: 2;
-                        animation-fill-mode:forwards;
-                        animation-direction: alternate-reverse;
                     }
                 }
         }
-        }
+    &.menu__list-top{
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 108px;
+        height: 100%;
+        background-color: #E8C300;
+        left: 0;
+        margin: 0;
+        z-index: 100;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
-    // & li{
-    //     padding-top: 19px;
+}
+.menu__list-top{
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 108px;
+    height: 100%;
+    background-color: #E8C300;
+    left: 0;
+    margin: 0;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+    .menu__burger{
+        display: none;
+        width: 50px;
+        position: relative;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        cursor: pointer;
+        
+    .burger ,
+    & ::before,
+    & ::after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        height: 2px;
+        background-color: #000;
+        transition: 0.5s ease;
+    }
+    & ::before{
+        transform: translateY(-5px);
+    }
+    & ::after{
+        transform: translateY(5px);
+    }
+    &.active span::before {
+        transform: rotate(35deg);
+        transform-origin: left bottom;
+        width: 10px;
+    }
+    &.active span::after{
+        transform: rotate(-35deg);
+        transform-origin: left top;
+        width: 10px;
+    }
+    //     }
+    //     & ::before{
+    //         top: -5px;
+    //         }
+    //     & ::before{
+    //             top: -5px;
+    //             }
+    //     & ::after {
+    //         top: 5px;
+    //         }
+    //     }
+    //     &::before,
+    //     &::after{
+    //         transition: 0.5s ease ;
+    //     }
     // }
-    
+    }
+}
  .header__top{
      margin-top: 260px;  
      height: 100%;
@@ -233,4 +312,20 @@
 
  @media (min-width:1357px) and (max-width:1639px){
 
+ }
+
+ @media screen and (max-width:1143px){
+    .menu .menu__list{
+        display: none;
+   }
+    .menu .menu__burger{
+       display: block;
+       top: -10px;
+   }
+   object{
+    display: none;
+}
+ li{
+    padding: 10px 15px;
+}
  }
