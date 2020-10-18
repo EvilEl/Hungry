@@ -1479,6 +1479,18 @@ p {
   padding-right: 21px;
 }
 
+@media (max-width: 676px) {
+  .event .event__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .event .event__wrapper .event__image {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 .image .image__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

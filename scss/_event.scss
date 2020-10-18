@@ -34,3 +34,15 @@
         padding-right: 21px;
     }
 }
+
+
+@media (max-width:676px){
+    .event{
+        .event__wrapper{
+            flex-wrap: wrap;
+            .event__image{
+                flex-grow: 1;
+            }
+        }
+    }
+}
