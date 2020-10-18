@@ -743,6 +743,9 @@ p {
   .team .team__wrapper .team__right {
     margin-top: 67px;
   }
+  .team .team__wrapper .team__right .team__info {
+    margin-left: 54px;
+  }
 }
 
 .booking {
