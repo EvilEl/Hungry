@@ -18,19 +18,11 @@
         .event__image{
             position: relative;
             flex: 0 0 53%;
-            padding: 0 0 43% 0;
-            overflow: hidden;
             .event__left{
-                position: absolute;
-                top: 0;
-                object-fit: cover;
-                object-position: center;
-                
+                width: 100%;
             }
             .event__right{
-                    position: absolute;
-                    object-fit: cover;
-                    object-position: center;
+                   width: 100%;
             }
         }
     }

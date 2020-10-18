@@ -5,7 +5,25 @@ const dots = document.querySelectorAll('.dot'),
     body = document.querySelector('body'),
     link = document.querySelectorAll('.menu__link'),
     stock = document.querySelectorAll('.stock__link'),
-    stockWr = document.querySelectorAll('.stock__wrappper');
+    stockWr = document.querySelectorAll('.stock__wrappper'),
+    line = document.querySelector('.slider__inner'),
+    left = -1302,
+    sliderWidth = 1302;
+
+// dots.forEach(function (value, i) {
+//     value.onclick = () => {
+//         slider.forEach(function (valuevr, g) {
+//             if (i == g) {
+//                 dots[i].classList.toggle('active')
+//                 slider[i].style.left = left + 'px'
+//             }
+//             else {
+//                 dots[g].classList.remove('active')
+//             }
+//         })
+//     }
+// })
+
 stock.forEach(function (value, i) {
     value.onclick = () => {
         stockWr.forEach(function (valuevr, g) {
@@ -37,6 +55,11 @@ function linkmass() {
 for (let i = 0; i < link.length; i++) {
     link[i].onclick = linkmass;
 }
+
+
+
+
+
 
 dots[0].addEventListener('click', e => {
     slider[0].classList.remove('margin');
@@ -72,18 +95,3 @@ dots[2].addEventListener('click', e => {
     dots[1].style.background = '#333';
     dots[2].style.background = '#fff';
 })
-
-// dots.forEach(function (value, i) {
-//     value.onclick = () => {
-//         slider.forEach(function (valuevr, g) {
-//             if (i == g) {
-//                 slider[i].classList.add('margin')
-//                 slider[i].style.transform = 'translateX(100%)'
-//             } else {
-//                 slider[g].style.transform = 'translateX(-200%)'
-//                 slider[i].classList.remove('margin')
-//             }
-//         })
-
-//     }
-// })

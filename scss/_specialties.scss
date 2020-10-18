@@ -16,7 +16,8 @@
         position: relative;
         .slider__inner{
             display: flex;
-            overflow: hidden; 
+            overflow: hidden;
+            width: 100%; 
             .slider__item{
                 display: flex;
                 flex: 0 0 100%;
@@ -90,7 +91,11 @@
             margin-right: 13px;
             background: #333;
             cursor: pointer;
-                &:first-child{
+                // &:first-child{
+                // background: #fff;
+            // }
+            &.active {
+                transform: scale(1.2);
                 background: #fff;
             }
         }

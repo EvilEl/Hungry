@@ -310,10 +310,6 @@
  }
 
 
- @media (min-width:1357px) and (max-width:1639px){
-
- }
-
  @media screen and (max-width:1143px){
     .menu .menu__list{
         display: none;
@@ -325,7 +321,32 @@
    object{
     display: none;
 }
- li{
-    padding: 10px 15px;
-}
  }
+
+@media (max-width:676px){
+    .header__top{
+        .header__left-time{
+            display: none;
+        }
+        .header__center{
+            left: 12.6%;
+            width: 100%;
+            .header__center-name p{
+                padding-right: 26%;
+            }
+        }
+        .header__right{
+            top: 38%;
+            right: 36%;
+            .header__right-social{
+                display: flex;
+                .header__right-social__ins{
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    .contact .contact__form .contact__form-inp{
+        margin-right: 0;
+    }
+}
