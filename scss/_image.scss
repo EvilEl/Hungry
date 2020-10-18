@@ -6,3 +6,15 @@
         }
     }
 }
+
+
+@media (max-width:676px){
+    .image{
+        .image__wrapper{
+            flex-wrap: wrap;
+            & img {
+                width: 50%;
+            }
+        }
+    }
+}

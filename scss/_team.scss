@@ -89,8 +89,22 @@
             }
             .team__right{
                 margin-top: 67px;
+                .team__tilte{
+                    padding-left: 0;
+                    font-size: 25px;
+                    .team__title-text{
+                        &::after{
+                            width: 9%;
+                            left: 45%;
+                        }
+                    }
+                }
+                .team__text-info{
+                    width: 86%;
+                }
                 .team__info{
-                    margin-left: 54px;
+                    width: 68%;
+                    font-size: 14px;
                 }
             }
         }

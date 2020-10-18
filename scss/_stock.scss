@@ -320,9 +320,20 @@
         }
          .stock__items{
              .stock__link{
-
+                font-size: 9px;
              }
          }
      }
+     .stock__wrappper{
+        .stock__items{
+            .stock__items-name{
+                font-size: 7.5px;
+            }
+            .stock__items-recept{
+                font-size: 9px;
+            }
+        }
+     }
  }
+ 
 }
