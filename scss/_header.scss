@@ -24,9 +24,10 @@
             .menu__link{
                 position: relative;
                 color: #fff;
+                display: block;
                 font-size: 12px;
                 font-family: OpenSans;
-                padding: 0 13.4px;
+                // padding: 0 13.4px;
                 letter-spacing: 0.9px;
                     &:last-child{
                     // padding-right: 0;
@@ -325,7 +326,9 @@
  }
 
 @media (max-width:676px){
+
     .header__top{
+        margin-top: 150px;
         .header__left-time{
             display: none;
         }

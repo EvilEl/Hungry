@@ -75,8 +75,9 @@
 
 @media (max-width: 728px) {
     .team{
+        padding-bottom: 30px;
         .team__team{
-
+            padding-top: 30px;
         }
         .team__wrapper{
             flex-direction: column-reverse;

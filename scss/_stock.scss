@@ -314,6 +314,7 @@
 
 @media screen and (max-width:676px){
  .stock {
+    padding-bottom: 10px;
      .stock__list{
         li:last-child{
             padding-left:0;
@@ -325,6 +326,7 @@
          }
      }
      .stock__wrappper{
+         margin-top: 10px;
         .stock__items{
             .stock__items-name{
                 font-size: 7.5px;

@@ -7,9 +7,10 @@ const dots = document.querySelectorAll('.dot'),
     stock = document.querySelectorAll('.stock__link'),
     stockWr = document.querySelectorAll('.stock__wrappper'),
     line = document.querySelector('.slider__inner'),
+    menuItem = document.querySelector('.menu__item'),
     left = -1302,
     sliderWidth = 1302;
-
+console.log(menuItem);
 // dots.forEach(function (value, i) {
 //     value.onclick = () => {
 //         slider.forEach(function (valuevr, g) {
@@ -36,11 +37,14 @@ stock.forEach(function (value, i) {
     }
 })
 burger.addEventListener('click', e => {
-
     burger.classList.toggle('active');
-    menu.classList.toggle('menu__list-top')
-    body.classList.toggle('active-burger')
-
+    menu.classList.toggle('menu__list-top');
+    body.classList.toggle('active-burger');
+    link.forEach(function (value, i) {
+        if (value == value) {
+            link[i].classList.toggle('padding')
+        }
+    })
 })
 
 

@@ -113,6 +113,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.padding {
+  padding: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -175,9 +179,9 @@ p {
 .menu .menu__list .menu-item .menu__link {
   position: relative;
   color: #fff;
+  display: block;
   font-size: 12px;
   font-family: OpenSans;
-  padding: 0 13.4px;
   letter-spacing: 0.9px;
 }
 
@@ -513,6 +517,9 @@ p {
 }
 
 @media (max-width: 676px) {
+  .header__top {
+    margin-top: 150px;
+  }
   .header__top .header__left-time {
     display: none;
   }
@@ -743,6 +750,12 @@ p {
 }
 
 @media (max-width: 728px) {
+  .team {
+    padding-bottom: 30px;
+  }
+  .team .team__team {
+    padding-top: 30px;
+  }
   .team .team__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1416,11 +1429,17 @@ p {
 }
 
 @media screen and (max-width: 676px) {
+  .stock {
+    padding-bottom: 10px;
+  }
   .stock .stock__list li:last-child {
     padding-left: 0;
   }
   .stock .stock__list .stock__items .stock__link {
     font-size: 9px;
+  }
+  .stock .stock__wrappper {
+    margin-top: 10px;
   }
   .stock .stock__wrappper .stock__items .stock__items-name {
     font-size: 7.5px;
@@ -1480,6 +1499,9 @@ p {
 }
 
 @media (max-width: 676px) {
+  .event {
+    padding-bottom: 30px;
+  }
   .event .event__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1599,6 +1621,15 @@ p {
 @media (max-width: 1070px) {
   .contact .contact__form .contact__form-inp {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 676px) {
+  .contact {
+    padding-bottom: 30px;
+  }
+  .contact .contact__title {
+    margin-top: 20px;
   }
 }
 
