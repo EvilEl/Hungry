@@ -73,13 +73,22 @@
 }
 
 
-@media (min-width:320px) and (max-width:1462px){
+@media (max-width:728px){
 
     .about__wrapper{
-        // flex-wrap: wrap;
-        // margin-top: -200px;
+        flex-direction: column;
+        .about__left{
+            .about__tilte{
+                padding: 0;
+            }
+            .about__info{
+                margin-left: 28px;
+            }
+        }
+        .about__right {
+            margin-top: 30px;
+        }
     }
-    .about__right {
-        // margin: 0 auto;
-    }
+    
 }
+

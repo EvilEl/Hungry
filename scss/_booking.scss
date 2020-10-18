@@ -87,6 +87,23 @@
 }
 
 
-@media (min-width:320px) and (max-width:1462px){
+@media (max-width: 728px){
+    .booking{
+        .booking__wrapper{
+            flex-direction: column;
+            .booking__left{
 
+            }
+            .booking__right{
+                    padding: 0;
+            }
+        }
+        .booking__bottom{
+                width: 100%;
+                .booking__bottom-text {
+                    margin-left: 0;
+                
+            }
+        }
+    }
 }

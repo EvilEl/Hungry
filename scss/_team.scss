@@ -72,3 +72,24 @@
     
 }
 
+
+@media (max-width: 728px) {
+    .team{
+        .team__team{
+
+        }
+        .team__wrapper{
+            flex-direction: column-reverse;
+            .team__left{
+                margin-top: 30px;
+                padding: 0;
+                .taem__left-image{
+                    position: relative;
+                }
+            }
+            .team__right{
+                margin-top: 67px;
+            }
+        }
+    }
+}
