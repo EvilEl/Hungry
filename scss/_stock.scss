@@ -17,8 +17,8 @@
             position: absolute;
             content: '';
             top: 90%;
-            left: 47%;
-            width: 4.5%;
+            left: 43%;
+            width: 9%;
             border-radius: 50px;
             margin: 0 auto;
             height: 5px;
@@ -315,6 +315,11 @@
 @media screen and (max-width:676px){
  .stock {
     padding-bottom: 10px;
+    .stock__text{
+        width: 100%;
+        margin-left: 0;
+        font-size: 16px;
+    }
      .stock__list{
         li:last-child{
             padding-left:0;

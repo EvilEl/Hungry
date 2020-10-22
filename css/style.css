@@ -1119,8 +1119,8 @@ p {
   position: absolute;
   content: '';
   top: 90%;
-  left: 47%;
-  width: 4.5%;
+  left: 43%;
+  width: 9%;
   border-radius: 50px;
   margin: 0 auto;
   height: 5px;
@@ -1461,6 +1461,11 @@ p {
   .stock {
     padding-bottom: 10px;
   }
+  .stock .stock__text {
+    width: 100%;
+    margin-left: 0;
+    font-size: 16px;
+  }
   .stock .stock__list li:last-child {
     padding-left: 0;
   }
@@ -1586,8 +1591,8 @@ p {
   position: absolute;
   content: "";
   top: 74%;
-  left: 46.8%;
-  width: 4.8%;
+  left: 43%;
+  width: 11%;
   border-radius: 50px;
   margin: 0px auto;
   height: 5px;
@@ -1623,7 +1628,7 @@ p {
   margin-top: 10px;
   background-color: #E5E5E5;
   border-radius: 5px;
-  width: 98.2%;
+  width: 99%;
   padding: 22px 0 0 18px;
   letter-spacing: 0.3px;
   height: 120px;
@@ -1631,8 +1636,11 @@ p {
   resize: none;
 }
 
-.contact .contact__form .contact__form-img {
-  width: 48.9%;
+.contact .contact__form .contact__form-image {
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+  margin-top: 33px;
 }
 
 .contact .contact__form button {
@@ -1640,7 +1648,7 @@ p {
   text-align: center;
   border-radius: 5px;
   margin-top: 9px;
-  width: 49.2%;
+  width: 49.6%;
   font-size: 12.5px;
   color: #fff;
   padding-top: 4px;
@@ -1657,8 +1665,21 @@ p {
   .contact {
     padding-bottom: 30px;
   }
+  .contact .contact__text {
+    margin: 0;
+    width: 100%;
+    font-size: 13px;
+  }
   .contact .contact__title {
     margin-top: 20px;
+  }
+  .contact .contact__form .contact__form-image {
+    margin-top: 10px;
+    display: block;
+    width: 99%;
+  }
+  .contact .contact__form button {
+    width: 100%;
   }
 }
 

@@ -16,8 +16,8 @@
             position: absolute;
             content: "";
             top: 74%;
-            left: 46.8%;
-            width: 4.8%;
+            left: 43%;
+            width: 11%;
             border-radius: 50px;
             margin: 0px auto;
             height: 5px;
@@ -49,22 +49,28 @@
             margin-top: 10px;
             background-color: #E5E5E5;
             border-radius: 5px;
-            width: 98.2%;
+            width: 99%;
             padding: 22px 0 0 18px;
             letter-spacing: 0.3px;
             height: 120px;
             outline: none;
             resize: none;
         }
-        .contact__form-img{
-            width: 48.9%;
+        // .contact__form-img{
+        //     width: 48.9%;
+        // }
+        .contact__form-image{
+            width: 49%;
+            height: 100%;
+            display: inline-block;
+            margin-top: 33px;
         }
         & button {
             background: #E8C300;
             text-align: center;
             border-radius: 5px;
             margin-top: 9px;
-            width: 49.2%;
+            width: 49.6%;
             font-size: 12.5px;
             color: #fff;
             padding-top: 4px;
@@ -82,8 +88,23 @@
 @media (max-width:676px){
     .contact{
         padding-bottom: 30px;
+        .contact__text{
+            margin: 0;
+            width: 100%;
+            font-size: 13px;
+        }
         .contact__title{
             margin-top: 20px;
+        }
+        .contact__form{
+            .contact__form-image{
+                margin-top: 10px;
+                display: block;
+                width: 99%;
+            }
+            button{
+                width: 100%;
+            }
         }
     }
 }
