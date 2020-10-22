@@ -312,7 +312,7 @@ p {
 .header__top .header__left .header__left-time p {
   color: #fff;
   font-family: OpenSans;
-  font-size: calc(2px + 15 * (100vw/1980));
+  font-size: calc(2px + 13 * (100vw/1980));
   letter-spacing: 0.2px;
 }
 
