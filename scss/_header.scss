@@ -20,7 +20,8 @@
             }
         }
         .menu-item{
-            padding-right: 57px;
+            // padding-right: 57px;
+            padding-right: 42px;
             .menu__link{
                 position: relative;
                 color: #fff;
@@ -138,7 +139,7 @@
 }
  .header__top{
      margin-top: 260px;  
-     height: 100%;
+     height: 68%;
      display: flex;
      justify-content: space-between;
      position: relative;
@@ -196,7 +197,8 @@
         .header__center-left{
             margin: 4% 3% 0 17%; 
             width: 19.5%;
-            font-size: 12px;
+            // font-size: 12px;
+            font-size: calc(9px + 2 * (100vw/960));
             height: 58px;
             font-weight: bold;
             border: 1px solid #fff;
@@ -214,7 +216,8 @@
         }
         .header__center-right{
             width: 19.5%;
-            font-size: 12px;
+            // font-size: 12px;
+            font-size: calc(9px + 2 * (100vw/960));
             height: 58px;
             font-weight: bold;
             border: 1px solid #fff;
@@ -356,7 +359,7 @@
             }
         }
         .header__right{
-            top: 59%;
+            top: 88%;
             right: 0%;
             .header__right-social{
                 display: flex;

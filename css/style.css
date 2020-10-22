@@ -173,7 +173,7 @@ p {
 }
 
 .menu .menu__list .menu-item {
-  padding-right: 57px;
+  padding-right: 42px;
 }
 
 .menu .menu__list .menu-item .menu__link {
@@ -290,7 +290,7 @@ p {
 
 .header__top {
   margin-top: 260px;
-  height: 100%;
+  height: 68%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,7 +359,7 @@ p {
 .header__top .header__center .header__center-left {
   margin: 4% 3% 0 17%;
   width: 19.5%;
-  font-size: 12px;
+  font-size: calc(9px + 2 * (100vw/960));
   height: 58px;
   font-weight: bold;
   border: 1px solid #fff;
@@ -381,7 +381,7 @@ p {
 
 .header__top .header__center .header__center-right {
   width: 19.5%;
-  font-size: 12px;
+  font-size: calc(9px + 2 * (100vw/960));
   height: 58px;
   font-weight: bold;
   border: 1px solid #fff;
@@ -547,7 +547,7 @@ p {
     width: 31%;
   }
   .header__top .header__right {
-    top: 59%;
+    top: 88%;
     right: 0%;
   }
   .header__top .header__right .header__right-social {
@@ -913,6 +913,13 @@ p {
   }
   .booking .booking__bottom .booking__bottom-text {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 460) {
+  .booking .booking__wrapper .booking__left .booking__table .booking__table__form {
+    margin-left: 17px;
+    margin-right: 0px;
   }
 }
 

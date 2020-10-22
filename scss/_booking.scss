@@ -107,3 +107,20 @@
         }
     }
 }
+
+@media (max-width:460){
+    .booking{
+        .booking__wrapper {
+            .booking__left{
+                .booking__table {
+                    .booking__table__form{
+                        margin-left: 17px;
+                        margin-right: 0px;
+            
+                    }
+                }
+            }
+
+        } 
+    }
+}
