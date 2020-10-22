@@ -43,10 +43,10 @@
         ::after{
             position: absolute;
             display: block;
-            width: 59.1px;
+            width: 15%;
             height: 4.4px;
             top: 51px;
-            left: 43.9%;
+            left: 42.9%;
             content: '';
             background-color: #E8C300;
             border-radius: 50px;
@@ -81,8 +81,13 @@
             .about__tilte{
                 padding: 0;
             }
+            .about__text{
+                font-size: 14px;
+                margin-left: 7%;
+            }
             .about__info{
-                margin-left: 28px;
+                margin-left: 6.5%;
+                font-size: 12px;
             }
         }
         .about__right {

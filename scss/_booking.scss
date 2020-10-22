@@ -102,13 +102,14 @@
                 width: 100%;
                 .booking__bottom-text {
                     margin-left: 0;
-                
+                    font-size: 10px;
+                    // font-size:calc(5px+10*(100vh/960));
             }
         }
     }
 }
 
-@media (max-width:460){
+@media (max-width:460px){
     .booking{
         .booking__wrapper {
             .booking__left{
@@ -116,7 +117,28 @@
                     .booking__table__form{
                         margin-left: 17px;
                         margin-right: 0px;
-            
+                        width: 42%;
+                    }
+                    .booking__btn__form{
+                        width: 90%;
+                        margin-left: 15px;
+                    }
+                }
+            }
+
+        } 
+    }
+}
+
+@media (max-width:394px){
+    .booking{
+        .booking__wrapper {
+            .booking__left{
+                .booking__table {
+                    .booking__table__form{
+                    }
+                    .booking__btn__form{
+                        width: 92%;
                     }
                 }
             }
