@@ -756,6 +756,7 @@ p {
   }
   .team .team__team {
     padding-top: 30px;
+    margin-left: 6%;
   }
   .team .team__wrapper {
     -webkit-box-orient: vertical;
@@ -783,9 +784,12 @@ p {
   }
   .team .team__wrapper .team__right .team__text-info {
     width: 86%;
+    padding: 0;
+    margin-left: 21px;
   }
   .team .team__wrapper .team__right .team__info {
-    width: 68%;
+    width: 78%;
+    margin-left: 40px;
     font-size: 14px;
   }
 }
