@@ -613,7 +613,7 @@ p {
 .about__left .about__tilte ::after {
   position: absolute;
   display: block;
-  width: 15%;
+  width: 9%;
   height: 4.4px;
   top: 51px;
   left: 42.9%;

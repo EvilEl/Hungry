@@ -131,16 +131,14 @@
         <div class="container">
             <div class="booking__wrapper">
                 <div class="booking__left">
-                    <form class="booking__table" action="https://jsonplaceholder.typicode.com/posts" method="post"
-                        enctype="">
-
+                    <form class="booking__table" action="https://jsonplaceholder.typicode.com/posts" method="post">
                         <legend class="booking__table-title">book a table</legend>
                         <input class="booking__table__form" name="Имя" type="text" placeholder="Name" required>
                         <input class="booking__table__form" name="email" type="email" placeholder="Email" required>
                         <input class="booking__table__form" name="phone" type="number" placeholder="Phone" required>
-                        <input class="booking__table__form" name="people" type="" placeholder="People">
+                        <input class="booking__table__form" name="people" type="text" placeholder="People">
                         <input class="booking__table__form" name="data" type="text" placeholder="Data(mm/dd)" required>
-                        <input class="booking__table__form" name="time" type="time" required>
+                        <input class="booking__table__form" name="time" type="time">
                         <button class="booking__btn__form" type="submit">BOOK NOW</button>
                     </form>
                 </div>
@@ -948,9 +946,9 @@
                 <input class="contact__form-inp" type="text" name="Имя" placeholder="Name">
                 <input class="contact__form-inp" type="email" name="Почта" placeholder="Email">
                 <input class="contact__form-inp" type="text" name="Телефон" placeholder="Phone">
-                <textarea name="message" placeholder="Message" id=""></textarea>
+                <textarea name="message" placeholder="Message"></textarea>
                 <!-- <input class="contact__form-img" type="image" src="img/copyr.png" alt=""> -->
-                <img class="contact__form-image" src="img/copyr.png" alt="" srcset="">
+                <img class="contact__form-image" src="img/copyr.png" alt="copyr">
                 <button type="submit">SEND MESSAGE</button>
             </form>
         </div>
