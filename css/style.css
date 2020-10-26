@@ -1688,7 +1688,7 @@ p {
   height: 41%;
 }
 
-.map__gogle {
+.map .map__gogle {
   width: 100%;
   height: 100%;
 }
