@@ -81,7 +81,7 @@
             margin-top: -5px;
             margin-left: -61px;
             letter-spacing: 0.1px;
-            font-size: 11.9px;
+            font-size: calc(3px + 8 * (100vw/960));
         }
     }
 }
@@ -89,6 +89,7 @@
 
 @media (max-width: 728px){
     .booking{
+        padding-bottom: 27px;
         .booking__wrapper{
             flex-direction: column;
             .booking__left{
@@ -100,10 +101,11 @@
         }
         .booking__bottom{
                 width: 100%;
+                margin-top: 60px;
                 .booking__bottom-text {
                     margin-left: 0;
-                    font-size: 10px;
-                    // font-size:calc(5px+10*(100vh/960));
+                    // font-size: 10px;
+                    
             }
         }
     }
@@ -125,8 +127,10 @@
                     }
                 }
             }
-
         } 
+        .booking__bottom{
+            margin-top: 30px;
+        }
     }
 }
 

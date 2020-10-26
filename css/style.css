@@ -904,10 +904,13 @@ p {
   margin-top: -5px;
   margin-left: -61px;
   letter-spacing: 0.1px;
-  font-size: 11.9px;
+  font-size: calc(3px + 8 * (100vw/960));
 }
 
 @media (max-width: 728px) {
+  .booking {
+    padding-bottom: 27px;
+  }
   .booking .booking__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -919,10 +922,10 @@ p {
   }
   .booking .booking__bottom {
     width: 100%;
+    margin-top: 60px;
   }
   .booking .booking__bottom .booking__bottom-text {
     margin-left: 0;
-    font-size: 10px;
   }
 }
 
@@ -935,6 +938,9 @@ p {
   .booking .booking__wrapper .booking__left .booking__table .booking__btn__form {
     width: 90%;
     margin-left: 15px;
+  }
+  .booking .booking__bottom {
+    margin-top: 30px;
   }
 }
 
