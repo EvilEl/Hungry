@@ -8,22 +8,9 @@ const dots = document.querySelectorAll('.dot'),
     stockWr = document.querySelectorAll('.stock__wrappper'),
     line = document.querySelector('.slider__inner'),
     menuItem = document.querySelector('.menu__item'),
+    preload = document.querySelector('.preload'),
     left = -1302,
     sliderWidth = 1302;
-console.log(menuItem);
-// dots.forEach(function (value, i) {
-//     value.onclick = () => {
-//         slider.forEach(function (valuevr, g) {
-//             if (i == g) {
-//                 dots[i].classList.toggle('active')
-//                 slider[i].style.left = left + 'px'
-//             }
-//             else {
-//                 dots[g].classList.remove('active')
-//             }
-//         })
-//     }
-// })
 
 stock.forEach(function (value, i) {
     value.onclick = () => {
@@ -60,42 +47,55 @@ for (let i = 0; i < link.length; i++) {
     link[i].onclick = linkmass;
 }
 
+// preload.addEventListener('load', e => {
+//     body.classList.add('active-burger');
+// })
+preload = setTimeout(() =>
+    preload.classList.add('block')
+    , 2000);
+preload = setTimeout(() =>
+    body.classList.add('active-burger')
+    , 2000);
+// $(window).load(function () {
+//     $("#loading").fadeOut(500);
+//     $("#loading-center").click(function () {
+//         $("#loading").fadeOut(500);
+//     })
+// })
 
 
 
+// dots[0].addEventListener('click', e => {
+//     slider[0].classList.remove('margin');
+//     slider[1].classList.remove('margin')
+
+//     slider[1].style.transform = 'translateX(1300px)';
+//     slider[2].style.transform = 'translateX(2600px)';
 
 
-dots[0].addEventListener('click', e => {
-    slider[0].classList.remove('margin');
-    slider[1].classList.remove('margin')
+//     dots[0].style.background = '#fff';
+//     dots[1].style.background = '#333';
+//     dots[2].style.background = '#333';
+// })
 
-    slider[1].style.transform = 'translateX(1300px)';
-    slider[2].style.transform = 'translateX(2600px)';
+// dots[1].addEventListener('click', e => {
+//     slider[0].classList.add('margin');
+//     slider[1].classList.add('margin')
+//     slider[1].style.transform = 'translateX(-1300px)';
+//     slider[2].style.transform = 'translateX(2600px)';
 
+//     dots[0].style.background = '#333';
+//     dots[1].style.background = '#fff';
+//     dots[2].style.background = '#333';
+// })
 
-    dots[0].style.background = '#fff';
-    dots[1].style.background = '#333';
-    dots[2].style.background = '#333';
-})
-
-dots[1].addEventListener('click', e => {
-    slider[0].classList.add('margin');
-    slider[1].classList.add('margin')
-    slider[1].style.transform = 'translateX(-1300px)';
-    slider[2].style.transform = 'translateX(2600px)';
-
-    dots[0].style.background = '#333';
-    dots[1].style.background = '#fff';
-    dots[2].style.background = '#333';
-})
-
-dots[2].addEventListener('click', e => {
-    slider[0].classList.add('margin');
-    slider[1].style.transform = 'translateX(-2600px)';
-    slider[2].style.transform = 'translateX(-2600px)';
+// dots[2].addEventListener('click', e => {
+//     slider[0].classList.add('margin');
+//     slider[1].style.transform = 'translateX(-2600px)';
+//     slider[2].style.transform = 'translateX(-2600px)';
 
 
-    dots[0].style.background = '#333';
-    dots[1].style.background = '#333';
-    dots[2].style.background = '#fff';
-})
+//     dots[0].style.background = '#333';
+//     dots[1].style.background = '#333';
+//     dots[2].style.background = '#fff';
+// })
