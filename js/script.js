@@ -8,9 +8,21 @@ const dots = document.querySelectorAll('.dot'),
     stockWr = document.querySelectorAll('.stock__wrappper'),
     line = document.querySelector('.slider__inner'),
     menuItem = document.querySelector('.menu__item'),
-    preload = document.querySelector('.preload'),
+    preload = document.querySelector('.preloader'),
     left = -1302,
     sliderWidth = 1302;
+
+
+document.body.onload = function () {
+    setTimeout(function () {
+        if (!preload.classList.contains('done')) {
+            preload.classList.add('done')
+        }
+    }
+
+        , 1000)
+}
+
 
 stock.forEach(function (value, i) {
     value.onclick = () => {
@@ -47,15 +59,7 @@ for (let i = 0; i < link.length; i++) {
     link[i].onclick = linkmass;
 }
 
-// preload.addEventListener('load', e => {
-//     body.classList.add('active-burger');
-// })
-preload = setTimeout(() =>
-    preload.classList.add('block')
-    , 2000);
-preload = setTimeout(() =>
-    body.classList.add('active-burger')
-    , 2000);
+
 // $(window).load(function () {
 //     $("#loading").fadeOut(500);
 //     $("#loading-center").click(function () {
