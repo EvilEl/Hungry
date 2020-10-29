@@ -19,8 +19,7 @@ document.body.onload = function () {
             preload.classList.add('done')
         }
     }
-
-        , 1000)
+        , 50)
 }
 
 

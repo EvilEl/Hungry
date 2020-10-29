@@ -21,7 +21,7 @@ body{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            animation: spin 1s infinite linear;
+            animation: spin 0.5s infinite linear;
         }
         &.done{
             opacity: 0;

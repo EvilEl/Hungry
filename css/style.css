@@ -162,8 +162,8 @@ body .preloader .loader {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: spin 1s infinite linear;
-          animation: spin 1s infinite linear;
+  -webkit-animation: spin 0.5s infinite linear;
+          animation: spin 0.5s infinite linear;
 }
 
 body .preloader.done {
