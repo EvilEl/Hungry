@@ -22,7 +22,7 @@ document.body.onload = function () {
         , 50)
 }
 
-
+//  при клике на [I] открывается другой [I] 
 stock.forEach(function (value, i) {
     value.onclick = () => {
         stockWr.forEach(function (valuevr, g) {
@@ -44,61 +44,13 @@ burger.addEventListener('click', e => {
         }
     })
 })
-
-
+// Удаляет с бурегра классы
 function linkmass() {
     burger.classList.remove('active');
     menu.classList.remove('menu__list-top');
     body.classList.remove('active-burger');
 }
-
-
-
+// Перебор [i] для удаления по клику на элемент
 for (let i = 0; i < link.length; i++) {
     link[i].onclick = linkmass;
 }
-
-
-// $(window).load(function () {
-//     $("#loading").fadeOut(500);
-//     $("#loading-center").click(function () {
-//         $("#loading").fadeOut(500);
-//     })
-// })
-
-
-
-// dots[0].addEventListener('click', e => {
-//     slider[0].classList.remove('margin');
-//     slider[1].classList.remove('margin')
-
-//     slider[1].style.transform = 'translateX(1300px)';
-//     slider[2].style.transform = 'translateX(2600px)';
-
-
-//     dots[0].style.background = '#fff';
-//     dots[1].style.background = '#333';
-//     dots[2].style.background = '#333';
-// })
-
-// dots[1].addEventListener('click', e => {
-//     slider[0].classList.add('margin');
-//     slider[1].classList.add('margin')
-//     slider[1].style.transform = 'translateX(-1300px)';
-//     slider[2].style.transform = 'translateX(2600px)';
-
-//     dots[0].style.background = '#333';
-//     dots[1].style.background = '#fff';
-//     dots[2].style.background = '#333';
-// })
-
-// dots[2].addEventListener('click', e => {
-//     slider[0].classList.add('margin');
-//     slider[1].style.transform = 'translateX(-2600px)';
-//     slider[2].style.transform = 'translateX(-2600px)';
-
-
-//     dots[0].style.background = '#333';
-//     dots[1].style.background = '#333';
-//     dots[2].style.background = '#fff';
-// })

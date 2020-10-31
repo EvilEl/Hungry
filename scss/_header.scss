@@ -13,8 +13,8 @@
      .menu__list{
         display: flex;
         & object{
-            transition: all 1.5s;
             padding-left: 30px;
+            transition: transform .6s ease-in;
             &:hover{
                 transform: rotate(360deg);
             }
@@ -119,22 +119,6 @@
         transform-origin: left top;
         width: 10px;
     }
-    //     }
-    //     & ::before{
-    //         top: -5px;
-    //         }
-    //     & ::before{
-    //             top: -5px;
-    //             }
-    //     & ::after {
-    //         top: 5px;
-    //         }
-    //     }
-    //     &::before,
-    //     &::after{
-    //         transition: 0.5s ease ;
-    //     }
-    // }
     }
 }
  .header__top{
@@ -172,7 +156,6 @@
             position: relative;
             font-family: Banny;
             font-size: 94px;
-            // font-size: calc(7px + 55 * (100vw/1441));
             font-size: calc(7px + 30 * (100vw/960));
             letter-spacing: 4.5px;
             text-transform: uppercase;
@@ -197,7 +180,6 @@
         .header__center-left{
             margin: 4% 3% 0 17%; 
             width: 19.5%;
-            // font-size: 12px;
             font-size: calc(9px + 2 * (100vw/960));
             height: 58px;
             font-weight: bold;
@@ -216,7 +198,6 @@
         }
         .header__center-right{
             width: 19.5%;
-            // font-size: 12px;
             font-size: calc(9px + 2 * (100vw/960));
             height: 58px;
             font-weight: bold;
