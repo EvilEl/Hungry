@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="preload" href="demo8.html">
     <title>Hungry</title>
 </head>
@@ -159,17 +160,15 @@
         </div>
     </section>
 
-    <section class="specialties">`
+    <section class="specialties">
         <div class="container">
             <div class="specialties__title">
                 <h2 class="specialties__title-text">
                     specialties
                 </h2>
             </div>
-
-
             <div class="slider">
-                <div class="slider__inner">
+                <div class="slider__inner js-topslider">
                     <div class="slider__item">
                         <div class="slider__image">
                             <img class="slider__img" src="img/specialtiesIMG.png" alt="">
@@ -190,7 +189,9 @@
                         </div>
                     </div>
                     <div class="slider__item">
-                        <img class="slider__img " src="img/specialtiesIMG.png" alt="">
+                        <div class="slider__image">
+                            <img class="slider__img " src="img/specialtiesIMG.png" alt="">
+                        </div>
                         <div class="slider__content">
                             <h1 class="slider__title">chocolate pancakes</h1>
                             <p class="slider__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
@@ -207,7 +208,9 @@
                         </div>
                     </div>
                     <div class="slider__item">
-                        <img class="slider__img" src="img/specialtiesIMG.png" alt="">
+                        <div class="slider__image">
+                            <img class="slider__img" src="img/specialtiesIMG.png" alt="">
+                        </div>
                         <div class="slider__content">
                             <h1 class="slider__title">chocolate pancakes</h1>
                             <p class="slider__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
@@ -224,64 +227,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="dots__wrapper">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
             </div>
-
-            <!-- <div class="dots__wrapper">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div> -->
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="specialties__wrapper">
-                <div class="slider-wrapper">
-                    <div class="slide">
-                        <div class="specialties__left">
-                            <img class="specialties__left-image" src="img/specialtiesIMG.png" alt="">
-                        </div>
-                        <div class="specialties__right">
-                            <div class="specialties__tilte">
-                                <h1 class="specialties__title-text">MASTER CHEF</h1>
-                            </div>
-                            <div class="specialties__text">
-                                <p class="specialties__text-info">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus,
-                                    molestie est
-                                    a, tempor magna.
-                                </p>
-                            </div>
-                            <div class="specialties__info">
-                                <p class="specialties__info-light">
-                                    Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi
-                                    non ultrices
-                                    ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a
-                                    sollicitudin
-                                    lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
-                                    facilisis semper
-                                    laoreet.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
     </section>
 
 
@@ -973,8 +920,11 @@
         </div>
     </footer>
 
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
     <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

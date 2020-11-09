@@ -8,11 +8,7 @@ const dots = document.querySelectorAll('.dot'),
     stockWr = document.querySelectorAll('.stock__wrappper'),
     line = document.querySelector('.slider__inner'),
     menuItem = document.querySelector('.menu__item'),
-    preload = document.querySelector('.preloader'),
-    left = -1302,
-    sliderWidth = 1302;
-
-
+    preload = document.querySelector('.preloader');
 document.body.onload = function () {
     setTimeout(function () {
         if (!preload.classList.contains('done')) {
@@ -21,7 +17,6 @@ document.body.onload = function () {
     }
         , 50)
 }
-
 //  при клике на [I] открывается другой [I] 
 stock.forEach(function (value, i) {
     value.onclick = () => {
