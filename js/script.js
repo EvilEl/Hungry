@@ -9,18 +9,17 @@ const dots = document.querySelectorAll('.dot'),
     line = document.querySelector('.slider__inner'),
     menuItem = document.querySelector('.menu__item'),
     preload = document.querySelector('.preloader');
-document.body.onload = function () {
-    setTimeout(function () {
-        if (!preload.classList.contains('done')) {
-            preload.classList.add('done')
-        }
+document.body.onload = function() {
+        setTimeout(function() {
+            if (!preload.classList.contains('done')) {
+                preload.classList.add('done')
+            }
+        }, 50)
     }
-        , 50)
-}
-//  при клике на [I] открывается другой [I] 
-stock.forEach(function (value, i) {
+    //  при клике на [I] открывается другой [I] 
+stock.forEach(function(value, i) {
     value.onclick = () => {
-        stockWr.forEach(function (valuevr, g) {
+        stockWr.forEach(function(valuevr, g) {
             if (i == g) {
                 stockWr[i].classList.toggle('activeFlex')
             } else {
@@ -30,20 +29,25 @@ stock.forEach(function (value, i) {
     }
 })
 burger.addEventListener('click', e => {
-    burger.classList.toggle('active');
-    menu.classList.toggle('menu__list-top');
-    body.classList.toggle('active-burger');
-    link.forEach(function (value, i) {
-        if (value == value) {
-            link[i].classList.toggle('padding')
-        }
+        burger.classList.toggle('active');
+        menu.classList.toggle('menu__list-top');
+        body.classList.toggle('active-burger');
+        link.forEach(function(value, i) {
+            if (value == value) {
+                link[i].classList.toggle('padding')
+            }
+        })
     })
-})
-// Удаляет с бурегра классы
+    // Удаляет с бурегра классы
 function linkmass() {
     burger.classList.remove('active');
     menu.classList.remove('menu__list-top');
     body.classList.remove('active-burger');
+    link.forEach(function(value, i) {
+        if (value == value) {
+            link[i].classList.toggle('padding')
+        }
+    })
 }
 // Перебор [i] для удаления по клику на элемент
 for (let i = 0; i < link.length; i++) {
